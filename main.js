@@ -1,5 +1,9 @@
 function centuryFromYear(num) {
-   //  write code here.
+   if (num % 100 === 0) {
+      return num / 100
+   } else {
+      return Math.floor(num/100) + 1  
+   }
 }
 
 
